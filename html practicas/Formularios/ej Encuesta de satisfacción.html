@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=cv, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Encuesta de satisfacción</legend>
+            <label for="Nombre">Nombre</label><br>
+            <input type="text" id="Nombre" name="Nombre"><br>
+            <label for="Servicio">Indíca el servicio utilizado</label><br>
+            <input type="text" id="servicio" name="servicio" required><br>
+            <p>Valora el servicio</p>
+            <input type="radio" id="1" name="valoracion" value="1">
+            <label for="1">1</label><br>
+            <input type="radio" id="2" name="valoracion" value="2">
+            <label for="2">2</label><br>
+            <input type="radio" id="3" name="valoracion" value="3">
+            <label for="3">3</label><br>
+            <input type="radio" id="4" name="valoracion" value="4">
+            <label for="4">5</label><br>
+            <input type="radio" id="5" name="valoracion" value="5">
+            <label for="5">5</label><br>
+            <p>Marca los aspectos que más te hayan gustado:</p>
+            <input type="checkbox" name="aspectos" id="Atención">
+            <label for="Atención">Atención</label>
+            <input type="checkbox" name="aspectos" id="Rapidez">
+            <label for="Rapidez">Rapidez</label>
+            <input type="checkbox" name="aspectos" id="Precio">
+            <label for="Precio">Precio</label>
+            <input type="checkbox" name="aspectos" id="Cañodad">
+            <label for="Calidad">Calidad</label><br>
+            <p>¿Recomendaría el servicio?</p>
+            <input type="radio" id="si" name="reco" value="si">
+            <label for="si">Si</label><br>
+            <input type="radio" id="no" name="reco" value="no">
+            <label for="no">No</label><br>
+            <label for="comen">Comentarios adicionales</label><br>
+            <input type="text" id="comen" name="comen" style="width: 200px; height: 200px;"><br>
+            <br>
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+        </form>
+        <br>
+        <table>
+            <tr>
+                <th>Cliente</th>
+                <th>Servicio</th>
+                <th>valoración</th>
+                <th>Recomienda</th>
+                <th>Comentarios</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Reparación</td>
+                <td style="background-color: aqua;">5</td>
+                <td>Si</td>
+                <td>Muy buen servicio</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Instalación</td>
+                <td style="background-color: green;">4</td>
+                <td>Si</td>
+                <td>Rápido y eficaz</td>
+            </tr>
+            <tr>
+                <td>Lucía</td>
+                <td>Reparación</td>
+                <td style="background-color: yellow;">3</td>
+                <td>No</td>
+                <td>Tardaron demasiado</td>
+            </tr>
+            <tr>
+                <td>Carlo</td>
+                <td>Mantenimiento</td>
+                <td style="background-color: aqua;">5</td>
+                <td>Si</td>
+                <td>Excelente atención</td>
+            </tr>
+            <tr>
+                <td>Elena</td>
+                <td>Instalación</td>
+                <td style="background-color: red;">2</td>
+                <td>No</td>
+                <td>Precio elevado</td>
+            </tr>
+
+        </table>
+
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+        <label for="Nombre">Nombre</label><br>
+        <input type="text" id="Nombre" name="Nombre" required><br>
+        <label for="Apellidos">Apellidos</label><br>
+        <input type="text" name="Apellidos" id="Apellidos" name="Apellidos" required><br>
+        <label for="DNI">DNI</label><br>
+        <input type="text" id="DNI" name="DNI" required><br>
+        <label for="Fecha de nacimiento">Fecha de nacimiento</label><br>
+        <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento" required><br>
+        <label for="Correo electrónico">Correo electrónico</label><br>
+        <input type="email" id="Correo electrónico" name="Correo electrónico" required><br>
+        <label for="Teléfono">Teléfono</label><br>
+        <input type="tel" id="Teléfono" name="Teléfono" required><br>
+        <label for="Ciclo formativo">Ciclo formativo</label><br>
+        <input type="text" id="Ciclo formativo" name="Ciclo formativo" required><br>
+
+        <p>Que horario prefieres</p>
+        <form>
+            <input type="radio" id="Tarde" name="Turno" value="Tarde">
+            <label for="Tarde">Tarde</label><br>
+            <input type="radio" id="Mañana" name="Turno" value="Mañana">
+            <label for="Mañana">Mañana</label><br>
+        </form>
+        <P>Que modalidad quieres cursar</P>
+        <form>
+            <input type="radio" id="Presencial" name="modalidad" value="Presencial">
+            <label for="Presencial">Presencial</label><br>
+            <input type="radio" id="Semipresencial" name="modalidad" value="Semipresencial">
+            <label for="Semipresencial">Semipresencial</label><br>
+            <input type="radio" id="Online" name="modalidad" value="Online">
+            <label for="Online">Online</label><br>
+        </form>
+        <p>Acepto las politicas de privacidad</p>
+        <form>
+            <input type="checkbox" name="politicas" id="politicas">
+            <label for="politicas">Politicas de privacidad</label>
+        </form>
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+
+
+</body>
+
+</html>

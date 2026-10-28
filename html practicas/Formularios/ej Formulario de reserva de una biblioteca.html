@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reserva de una biblioteca</title>
+</head>
+
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Reservas biblioteca</legend>
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <label for="Nombre">Nombre</label><br>
+                <input type="text" id="Nombre" name="Nombre" required><br>
+                <label for="Apellidos">Apellidos</label><br>
+                <input type="text" name="Apellidos" id="Apellidos" name="Apellidos" required><br>
+                <label for="Correo electrónico">Correo electrónico</label><br>
+                <input type="email" id="Correo electrónico" name="Correo electrónico" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos del libro</legend>
+                <label for="Título del libro">Título del libro</label><br>
+                <input type="text" id="Título del libro" name="Título del libro" required><br>
+                <label for="Autor">Autor</label><br>
+                <input type="text" id="Autor" name="Autor" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Fechas</legend>
+                <label for="Fecha de reserva">Fecha de reserva</label><br>
+                <input type="date" id="Fecha de reserva" name="Fecha de reserva" required><br>
+                <label for="Fecha prevista de recogida">Fecha prevista de recogida</label><br>
+                <input type="date" id="Fecha prevista de recogida" name="Fecha prevista de recogida" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <p>Tipo de préstamo</p>
+                <form>
+                    <input type="radio" id="sala" name="préstamo" value="sala">
+                    <label for="sala">sala</label><br>
+                    <input type="radio" id="domicilio" name="préstamo" value="domicilio">
+                    <label for="domicilio">domicilio</label><br><br>
+                </form>
+                <label for="Comentario">Comentarios adicionales</label><br>
+                <input type="text" name="Comentario" id="Comentario" style="width: 200px; height: 200px;"><br>
+            </fieldset>
+            <input type="reset" value="Reiniciar formulario">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <table>
+        <tr>
+            <th>N.º reserva</th>
+            <th>Usuario</th>
+            <th>Libro</th>
+            <th>Fecha de reserva</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ana López</td>
+            <td>El principito</td>
+            <td>14/10/2026</td>
+            <td style="background-color: crimson;">Pendiente</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pablo Ruiz</td>
+            <td>La sombra del Viento</td>
+            <td>13/10/2026</td>
+            <td style="background-color: lightskyblue;">Confirmanda</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Marta Diaz</td>
+            <td>Don Quijote</td>
+            <td>12/10/2026</td>
+            <td style="background-color: lightgreen;">Entregada</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Luis Martín</td>
+            <td>Cien años de soledad</td>
+            <td>11/10/2026</td>
+            <td style="background-color: crimson;">Pendiente</td>
+        </tr>
+        
+    </table>
+
+</body>
+
+</html>
